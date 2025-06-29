@@ -1,0 +1,30 @@
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .service-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .hero {
+      padding: 80px 20px;
+    }
+  
+    .hero h2 {
+      font-size: 2em;
+    }
+  
+    .hero p {
+      font-size: 1em;
+    }
+  }
+  

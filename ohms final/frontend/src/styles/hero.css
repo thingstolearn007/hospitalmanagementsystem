@@ -1,0 +1,23 @@
+.hero {
+    text-align: center;
+    background: url('../images/5.jpg') no-repeat center center/cover;
+    color: black;
+    padding: 150px 20px;
+  }
+  
+  .hero h2 {
+    font-size: 2.5em;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+  }
+  
+  .hero .btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  

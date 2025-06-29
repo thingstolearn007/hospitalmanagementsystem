@@ -1,0 +1,188 @@
+/* src/styles/patientlist.css */
+.patient-list-container {
+    padding: 60px 20px;
+    background-color: #f9f9ff;
+    min-height: 100vh;
+  }
+  
+  .patient-list-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  .controls-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .search-input,
+  .filter-select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 250px;
+  }
+  
+  .export-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .export-btn:hover {
+    background-color: #218838;
+  }
+  
+  .patient-table {
+    max-width: 1000px;
+    margin: auto;
+    overflow-x: auto;
+  }
+  
+  .patient-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .patient-table th,
+  .patient-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    font-size: 1rem;
+  }
+  
+  .patient-table th {
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .patient-table tr:hover {
+    background-color: #f0f8ff;
+    transition: 0.3s;
+  }
+  
+  .edit-btn,
+  .delete-btn {
+    padding: 6px 12px;
+    margin: 4px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: #ffc107;
+  }
+  
+  .edit-btn:hover {
+    background-color: #e0a800;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+  .patient-table input {
+    width: 100%;
+    padding: 6px 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  .modal-content h4 {
+    margin-bottom: 10px;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .patient-table table,
+    .patient-table thead,
+    .patient-table tbody,
+    .patient-table th,
+    .patient-table td,
+    .patient-table tr {
+      display: block;
+      width: 100%;
+    }
+  
+    .patient-table thead tr {
+      display: none;
+    }
+  
+    .patient-table td {
+      position: relative;
+      padding-left: 50%;
+      border: none;
+      border-bottom: 1px solid #eee;
+    }
+  
+    .patient-table td::before {
+      position: absolute;
+      top: 12px;
+      left: 16px;
+      width: 45%;
+      white-space: nowrap;
+      font-weight: bold;
+      color: #007bff;
+    }
+  
+    .patient-table td:nth-of-type(1)::before { content: "Name"; }
+    .patient-table td:nth-of-type(2)::before { content: "Email"; }
+    .patient-table td:nth-of-type(3)::before { content: "Age"; }
+    .patient-table td:nth-of-type(4)::before { content: "Gender"; }
+    .patient-table td:nth-of-type(5)::before { content: "Last Visit"; }
+    .patient-table td:nth-of-type(6)::before { content: "Actions"; }
+  }
+  

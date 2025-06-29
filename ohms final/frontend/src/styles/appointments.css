@@ -1,0 +1,62 @@
+/* src/styles/appointments.css */
+.appointment-page {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../images/Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px 20px;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .appointment-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .appointment-form input,
+  .appointment-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #b3e5fc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .appointment-form button {
+    width: 100%;
+    background-color: #0288d1;
+    color: #fff;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .appointment-form button:hover {
+    background-color: #0277bd;
+  }
+  
+  .success-message {
+    margin-top: 20px;
+    text-align: center;
+    color: green;
+    font-weight: bold;
+  }
+  

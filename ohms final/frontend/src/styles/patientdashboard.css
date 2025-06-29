@@ -1,0 +1,78 @@
+.patient-dashboard {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+    background-color: #f0faff;
+    min-height: 100vh;
+  }
+  
+  .dashboard-title {
+    font-size: 2rem;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .patient-info {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .patient-info p,
+  .patient-info input,
+  .patient-info select {
+    margin: 10px 0;
+    font-size: 1rem;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .patient-info button {
+    margin-top: 10px;
+    padding: 10px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .patient-info button:hover {
+    background-color: #0056b3;
+  }
+  
+  .dashboard-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  }
+  
+  .dashboard-section h4 {
+    margin-bottom: 10px;
+    color: #17a2b8;
+  }
+  
+  .dashboard-section ul {
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 600px) {
+    .dashboard-title {
+      font-size: 1.5rem;
+    }
+  
+    .patient-info p,
+    .patient-info input,
+    .patient-info select {
+      max-width: 100%;
+    }
+  }
+  

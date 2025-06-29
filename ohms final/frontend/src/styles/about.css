@@ -1,0 +1,89 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero banner */
+.hero-banner {
+  height: 40vh;
+  background: linear-gradient(135deg, #ffdba3, #b0e0e6);
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.hero-banner h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.hero-banner p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* Section Titles */
+.section-title {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  color: #2c3e50;
+}
+
+/* About text */
+.about-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Team Section */
+.team-section {
+  background-color: #fff;
+  padding: 60px 20px;
+}
+
+.team-member {
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border: 4px solid #17a2b8;
+}
+
+.team-member h5 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+.team-member p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Footer */
+.footer {
+  background-color: #17a2b8;
+  font-size: 14px;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+}

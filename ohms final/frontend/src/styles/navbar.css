@@ -1,0 +1,75 @@
+header {
+  background: linear-gradient(to right, #0056b3, #ff6600);
+  color: #ffffff;
+  padding: 5px 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0 30px;
+}
+
+nav ul li {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+nav ul li a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+/* ✨ Elegant Hover */
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 70%;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border-radius: 6px;
+}
+
+/* Push Login to the right */
+.login-right {
+  margin-left: auto;
+}
+
+/* Special subtle style for Login button */
+nav ul .login-right a {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 8px 18px;
+  transition: background 0.3s ease;
+}
+
+nav ul .login-right a:hover {
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}

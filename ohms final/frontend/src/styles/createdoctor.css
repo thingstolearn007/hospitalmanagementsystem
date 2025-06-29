@@ -1,0 +1,67 @@
+.create-doctor-container {
+  padding: 60px 20px;
+  max-width: 600px;
+  margin: auto;
+  background-color: #f8f9ff;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.create-doctor-container h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.success-msg {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.doctor-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.doctor-form input[type="text"],
+.doctor-form input[type="file"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.doctor-form button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.doctor-form button:hover {
+  background-color: #0056b3;
+}
+
+.doctor-preview {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+}
+
+@media (max-width: 600px) {
+  .doctor-form {
+    padding: 20px;
+  }
+}
